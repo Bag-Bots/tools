@@ -1,0 +1,18 @@
+<p>calculator works!</p>
+
+<div class="bg-lime-50">
+ <div class="p-2">
+    Current price $: <input type="number" class="bg-white" [(ngModel)]="inputToInvest.current">
+    Range min $: <input type="number" class="bg-white" [(ngModel)]="inputToInvest.rangeMin">
+    Range max $: <input type="number" class="bg-white" [(ngModel)]="inputToInvest.rangeMax">
+    Amount to invest $: <input type="number" class="bg-white" [(ngModel)]="inputToInvest.investAmount">
+
+    <h4>
+      {{ (inputToInvest | computeSolToInvest) | json }}
+    </h4>
+    <!-- <h4>Result SOL : {{computeSolToInvest().resultSol}}</h4>
+    <h4>Result $ : {{computeSolToInvest().resultDollar}}</h4>
+    <h4>Result $ : {{computeSolToInvest().resultDollar}}</h4> -->
+    
+ </div>
+</div>
